@@ -55,7 +55,9 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/tile_background"
-            android:textSize="60sp"/>
+            android:textSize="60sp"
+            style="?android:attr/buttonBarButtonStyle"
+            tools:ignore="NestedWeights" />
 
         <Button
             android:id="@+id/block_01"
@@ -63,7 +65,8 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/tile_background"
-            android:textSize="60sp"/>
+            android:textSize="60sp"
+            style="?android:attr/buttonBarButtonStyle" />
 
         <Button
             android:id="@+id/block_02"
@@ -71,7 +74,8 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/tile_background"
-            android:textSize="60sp"/>
+            android:textSize="60sp"
+            style="?android:attr/buttonBarButtonStyle" />
 
     </LinearLayout>
 
@@ -86,7 +90,9 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/tile_background"
-            android:textSize="60sp"/>
+            android:textSize="60sp"
+            style="?android:attr/buttonBarButtonStyle"
+            tools:ignore="NestedWeights" />
 
         <Button
             android:id="@+id/block_11"
@@ -94,7 +100,8 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/tile_background"
-            android:textSize="60sp"/>
+            android:textSize="60sp"
+            style="?android:attr/buttonBarButtonStyle" />
 
         <Button
             android:id="@+id/block_12"
@@ -102,7 +109,8 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/tile_background"
-            android:textSize="60sp"/>
+            android:textSize="60sp"
+            style="?android:attr/buttonBarButtonStyle" />
 
     </LinearLayout>
 
@@ -117,7 +125,9 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/tile_background"
-            android:textSize="60sp"/>
+            android:textSize="60sp"
+            style="?android:attr/buttonBarButtonStyle"
+            tools:ignore="NestedWeights" />
 
         <Button
             android:id="@+id/block_21"
@@ -125,7 +135,8 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/tile_background"
-            android:textSize="60sp"/>
+            android:textSize="60sp"
+            style="?android:attr/buttonBarButtonStyle" />
 
         <Button
             android:id="@+id/block_22"
@@ -133,7 +144,8 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/tile_background"
-            android:textSize="60sp"/>
+            android:textSize="60sp"
+            style="?android:attr/buttonBarButtonStyle" />
 
     </LinearLayout>
 
@@ -148,7 +160,9 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/tile_background"
-            android:textSize="60sp"/>
+            android:textSize="60sp"
+            style="?android:attr/buttonBarButtonStyle"
+            tools:ignore="NestedWeights" />
 
         <Button
             android:id="@+id/block_31"
@@ -156,7 +170,8 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/tile_background"
-            android:textSize="60sp"/>
+            android:textSize="60sp"
+            style="?android:attr/buttonBarButtonStyle" />
 
         <Button
             android:id="@+id/block_32"
@@ -164,7 +179,8 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/tile_background"
-            android:textSize="60sp"/>
+            android:textSize="60sp"
+            style="?android:attr/buttonBarButtonStyle" />
 
     </LinearLayout>
 
