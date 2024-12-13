@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace = "com.rongbin99.set_apk"
-    compileSdk = 32
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.rongbin99.set_apk"
         minSdk = 31
-        targetSdk = 32
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
