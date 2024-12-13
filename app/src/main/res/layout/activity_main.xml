@@ -1,187 +1,170 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_view"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="#FDF5BF"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent">
 
-    <RelativeLayout
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/title_margin_top"
+        android:layout_marginBottom="@dimen/title_margin_bottom"
+        android:text="@string/app_name"
+        android:textStyle="@style/"
+        app:layout_constraintBottom_toTopOf="@id/text_container"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/text_container"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/content_area_margin_horizontal"
+        android:background="@drawable/text_background"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/content_area"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title">
 
         <TextView
-            android:id="@+id/score"
+            android:id="@+id/current_score"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/sets_found_0"
-            android:textColor="@color/black"
-            android:textSize="25sp" />
+            android:includeFontPadding="false"
+            android:textStyle="@style/" />
 
         <TextView
-            android:id="@+id/highscore"
+            android:id="@+id/cards_left"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/score"
-            android:text="@string/high_score_0"
-            android:textColor="@color/black"
-            android:textSize="25sp" />
-        <!-- change font type and size and shi-->
+            android:includeFontPadding="false"
+            android:textStyle="@style/" />
+
+        <TextView
+            android:id="@+id/matches_found"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:textStyle="@style/" />
+
+        <TextView
+            android:id="@+id/high_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:textStyle="@style/" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/content_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/content_area_margin_horizontal"
+        android:background="@drawable/board_background"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintBottom_toTopOf="@id/button_container"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_container">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/content_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:spanCount="@integer/span_count" />
+
+    </FrameLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/button_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/content_area_margin_horizontal"
+        android:layout_marginTop="@dimen/button_margin_top"
+        android:background="@drawable/button_container_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/content_area"
+        app:layout_constraintStart_toStartOf="@id/content_area"
+        app:layout_constraintTop_toBottomOf="@id/content_area">
 
         <Button
             android:id="@+id/restart_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_centerVertical="true"
-            android:layout_marginEnd="35dp"
+            android:background="@drawable/button_background"
             android:text="@string/restart"
-            android:textAllCaps="true"
-            android:textColor="@color/black"
-            android:backgroundTint="#92d1c3"
-            tools:ignore="RelativeOverlap" />
-    </RelativeLayout>
+            android:textStyle="@style/"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/shuffle_button"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <LinearLayout
+        <Button
+            android:id="@+id/shuffle_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:text="@string/shuffle"
+            android:textStyle="@style/"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/restart_button"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/shameless_plug"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1">
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/content_area_margin_horizontal"
+        android:layout_marginBottom="@dimen/shameless_plug_margin_bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
-        <Button
-            android:id="@+id/block_00"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@drawable/tile_background"
-            android:textSize="60sp"
-            style="?android:attr/buttonBarButtonStyle"
-            tools:ignore="NestedWeights" />
+        <ImageView
+            android:id="@+id/github"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/github_icon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/rongbin99"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-        <Button
-            android:id="@+id/block_01"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@drawable/tile_background"
-            android:textSize="60sp"
-            style="?android:attr/buttonBarButtonStyle" />
+        <TextView
+            android:id="@+id/rongbin99"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rongbin99"
+            android:textStyle="@style/"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/support"
+            app:layout_constraintStart_toEndOf="@id/github"
+            app:layout_constraintTop_toTopOf="parent" />
 
-        <Button
-            android:id="@+id/block_02"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@drawable/tile_background"
-            android:textSize="60sp"
-            style="?android:attr/buttonBarButtonStyle" />
+        <ImageView
+            android:id="@+id/support"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/rongbin99"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1">
-
-        <Button
-            android:id="@+id/block_10"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@drawable/tile_background"
-            android:textSize="60sp"
-            style="?android:attr/buttonBarButtonStyle"
-            tools:ignore="NestedWeights" />
-
-        <Button
-            android:id="@+id/block_11"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@drawable/tile_background"
-            android:textSize="60sp"
-            style="?android:attr/buttonBarButtonStyle" />
-
-        <Button
-            android:id="@+id/block_12"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@drawable/tile_background"
-            android:textSize="60sp"
-            style="?android:attr/buttonBarButtonStyle" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1">
-
-        <Button
-            android:id="@+id/block_20"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@drawable/tile_background"
-            android:textSize="60sp"
-            style="?android:attr/buttonBarButtonStyle"
-            tools:ignore="NestedWeights" />
-
-        <Button
-            android:id="@+id/block_21"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@drawable/tile_background"
-            android:textSize="60sp"
-            style="?android:attr/buttonBarButtonStyle" />
-
-        <Button
-            android:id="@+id/block_22"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@drawable/tile_background"
-            android:textSize="60sp"
-            style="?android:attr/buttonBarButtonStyle" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1">
-
-        <Button
-            android:id="@+id/block_30"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@drawable/tile_background"
-            android:textSize="60sp"
-            style="?android:attr/buttonBarButtonStyle"
-            tools:ignore="NestedWeights" />
-
-        <Button
-            android:id="@+id/block_31"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@drawable/tile_background"
-            android:textSize="60sp"
-            style="?android:attr/buttonBarButtonStyle" />
-
-        <Button
-            android:id="@+id/block_32"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@drawable/tile_background"
-            android:textSize="60sp"
-            style="?android:attr/buttonBarButtonStyle" />
-
-    </LinearLayout>
-
-</LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

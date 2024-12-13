@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <dimen name="title_margin_top">20dp</dimen>
+    <dimen name="title_margin_bottom">24dp</dimen>
+    <dimen name="content_area_margin_horizontal">60dp</dimen>
+    <dimen name="button_margin_top">24dp</dimen>
+    <dimen name="shameless_plug_margin_bottom">14dp</dimen>
+</resources>
