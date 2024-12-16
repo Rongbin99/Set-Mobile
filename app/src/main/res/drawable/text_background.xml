@@ -17,6 +17,20 @@
    limitations under the License.
    ##################################################
 -->
-<resources>
-    <integer name="span_count">3</integer>
-</resources>
+<shape
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <solid
+        android:color="@color/text_background_color">
+    </solid>
+
+    <stroke
+        android:width="@dimen/board_background_stroke_width"
+        android:color="@color/text_background_stoke">
+    </stroke>
+
+    <corners
+        android:radius="@dimen/text_background_radius"/>
+
+</shape>

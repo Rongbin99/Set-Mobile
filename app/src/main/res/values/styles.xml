@@ -18,5 +18,15 @@
    ##################################################
 -->
 <resources>
-    <integer name="span_count">3</integer>
+    <style name="TitleStyle" parent="TextAppearance.AppCompat.Title">
+        <item name="android:textColor">@color/title_color</item>
+    </style>
+
+    <style name="SubtitleStyle" parent="TextAppearance.AppCompat.Body1">
+        <item name="android:textColor">@color/subtitle_color</item>
+    </style>
+
+    <style name="ButtonStyle" parent="TextAppearance.AppCompat.Widget.Button.Colored">
+
+    </style>
 </resources>
