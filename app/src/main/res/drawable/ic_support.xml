@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   ##################################################
+   Copyright (c) 2024, 2025 - Rongbin Gu
+   All rights reserved. See LICENSE file for details.
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+   ##################################################
+
+   https://tabler.io/icons/icon/heart
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+  <path
+      android:pathData="M6.979,3.074a6,6 0,0 1,4.988 1.425l0.037,0.033l0.034,-0.03a6,6 0,0 1,4.733 -1.44l0.246,0.036a6,6 0,0 1,3.364 10.008l-0.18,0.185l-0.048,0.041l-7.45,7.379a1,1 0,0 1,-1.313 0.082l-0.094,-0.082l-7.493,-7.422a6,6 0,0 1,3.176 -10.215z"
+      android:fillColor="@color/icon_fill"/>
+</vector>
