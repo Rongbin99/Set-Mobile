@@ -18,16 +18,20 @@
    ##################################################
 -->
 <resources>
-    <color name="background_color">#FFFFFF</color>
-    <color name="title_color">#000000</color>
-    <color name="subtitle_color">#000000</color>
+    <color name="background_color">@color/material_dynamic_tertiary95</color>
+    <color name="title_color">@color/material_dynamic_neutral0</color>
+    <color name="subtitle_color">@color/material_dynamic_secondary0</color>
     <color name="tile_background_color">#000000</color>
+    <color name="button_color">@color/material_dynamic_neutral0</color>
+    <color name="icon_fill">@color/material_dynamic_neutral0</color>
 
     <!-- drawables -->
     <!-- board_background -->
     <color name="board_background_color">@color/material_dynamic_primary90</color>
-    <color name="board_background_stoke">@color/material_dynamic_secondary90</color>
+    <color name="board_background_stroke">@color/material_dynamic_secondary90</color>
     <!-- text_background -->
     <color name="text_background_color">@color/material_dynamic_primary90</color>
-    <color name="text_background_stoke">@color/material_dynamic_secondary90</color>
+    <color name="text_background_stroke">@color/material_dynamic_secondary90</color>
+    <!-- button_background -->
+    <color name="button_background_color">@color/material_dynamic_primary90</color>
 </resources>

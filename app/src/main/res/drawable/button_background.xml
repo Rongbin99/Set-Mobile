@@ -22,15 +22,9 @@
     android:shape="rectangle">
 
     <solid
-        android:color="@color/board_background_color">
-    </solid>
-
-    <stroke
-        android:width="@dimen/board_background_stroke_width"
-        android:color="@color/board_background_stroke">
-    </stroke>
+        android:color="@color/button_background_color"/>
 
     <corners
-        android:radius="@dimen/board_background_radius"/>
-  
+        android:radius="@dimen/button_radius"/>
+
 </shape>

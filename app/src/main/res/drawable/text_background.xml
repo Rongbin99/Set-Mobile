@@ -26,8 +26,8 @@
     </solid>
 
     <stroke
-        android:width="@dimen/board_background_stroke_width"
-        android:color="@color/text_background_stoke">
+        android:width="@dimen/text_background_stroke_width"
+        android:color="@color/text_background_stroke">
     </stroke>
 
     <corners

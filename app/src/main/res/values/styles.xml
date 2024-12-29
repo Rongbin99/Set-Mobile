@@ -26,7 +26,11 @@
         <item name="android:textColor">@color/subtitle_color</item>
     </style>
 
-    <style name="ButtonStyle" parent="TextAppearance.AppCompat.Widget.Button.Colored">
+    <style name="CreditStyle" parent="TextAppearance.AppCompat.Caption">
+        <item name="android:textColor">@color/subtitle_color</item>
+    </style>
 
+    <style name="ButtonStyle" parent="TextAppearance.AppCompat.Widget.Button.Colored">
+        <item name="android:textColor">@color/button_color</item>
     </style>
 </resources>

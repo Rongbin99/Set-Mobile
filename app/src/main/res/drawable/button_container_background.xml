@@ -21,16 +21,12 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:shape="rectangle">
 
-    <solid
-        android:color="@color/board_background_color">
-    </solid>
-
     <stroke
-        android:width="@dimen/board_background_stroke_width"
-        android:color="@color/board_background_stroke">
+        android:width="@dimen/button_background_stroke_width"
+        android:color="@color/text_background_stroke">
     </stroke>
 
     <corners
-        android:radius="@dimen/board_background_radius"/>
-  
+        android:radius="@dimen/button_background_radius"/>
+
 </shape>

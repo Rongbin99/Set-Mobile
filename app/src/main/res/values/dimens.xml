@@ -19,15 +19,19 @@
 -->
 <resources>
     <!-- activity_main -->
-    <dimen name="title_margin_top">20dp</dimen>
-    <dimen name="title_margin_bottom">24dp</dimen>
+    <dimen name="title_margin_top">60dp</dimen>
     <dimen name="content_area_margin_horizontal">60dp</dimen>
     <dimen name="button_margin_top">24dp</dimen>
-    <dimen name="shameless_plug_margin_bottom">14dp</dimen>
+    <dimen name="shameless_plug_margin_bottom">18dp</dimen>
 
     <!-- board_background -->
     <dimen name="board_background_radius">8dp</dimen>
     <dimen name="board_background_stroke_width">4dp</dimen>
     <!-- text_background -->
     <dimen name="text_background_radius">4dp</dimen>
+    <dimen name="text_background_stroke_width">2dp</dimen>
+    <!-- button_background -->
+    <dimen name="button_background_radius">4dp</dimen>
+    <dimen name="button_radius">10dp</dimen>
+    <dimen name="button_background_stroke_width">2dp</dimen>
 </resources>
