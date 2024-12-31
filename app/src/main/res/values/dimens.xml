@@ -23,6 +23,8 @@
     <dimen name="content_area_margin_horizontal">60dp</dimen>
     <dimen name="button_margin_top">24dp</dimen>
     <dimen name="shameless_plug_margin_bottom">18dp</dimen>
+    <dimen name="theme_icon">24dp</dimen>
+    <dimen name="theme_icon_margin">20dp</dimen>
 
     <!-- board_background -->
     <dimen name="board_background_radius">8dp</dimen>

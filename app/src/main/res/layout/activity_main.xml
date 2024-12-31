@@ -24,6 +24,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <ImageSwitcher
+        android:id="@+id/theme_switcher"
+        android:layout_width="@dimen/theme_icon"
+        android:layout_height="@dimen/theme_icon"
+        android:layout_marginTop="@dimen/theme_icon_margin"
+        android:layout_marginEnd="@dimen/theme_icon_margin"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
     <TextView
         android:id="@+id/title"
         android:layout_width="wrap_content"
@@ -123,6 +132,7 @@
             android:background="@drawable/button_background"
             android:text="@string/restart"
             android:textStyle="@style/ButtonStyle"
+            android:drawableStart="@drawable/ic_restart"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@id/shuffle_button"
             app:layout_constraintStart_toStartOf="parent"
@@ -135,6 +145,7 @@
             android:background="@drawable/button_background"
             android:text="@string/shuffle"
             android:textStyle="@style/ButtonStyle"
+            android:drawableStart="@drawable/ic_shuffle"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/restart_button"
