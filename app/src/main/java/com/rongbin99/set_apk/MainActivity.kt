@@ -46,7 +46,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var mCardsLeft: TextView
     private lateinit var mMatchesFound: TextView
     private lateinit var mBoard: RecyclerView
-//    private lateinit var mBoardTiles: CardAdapter
+    private lateinit var mBoardTiles: View
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -63,7 +63,7 @@ class MainActivity : AppCompatActivity() {
         mCardsLeft = findViewById(R.id.cards_left)
         mMatchesFound = findViewById(R.id.matches_found)
         mBoard = findViewById(R.id.content_recycler_view)
-//        mBoardTiles =
+//        mBoardTiles = findViewById(R.layout.game_board_card_item)
         mThemeSwitch = findViewById(R.id.theme_switcher)
 
         mThemeSwitch.setFactory {
@@ -94,6 +94,8 @@ class MainActivity : AppCompatActivity() {
 
         if (!mBoard.isVisible) {
             setBoard()
+            setHighScore()
+            setCardsLeft()
         }
 
         mRestart.setOnClickListener {
@@ -111,7 +113,8 @@ class MainActivity : AppCompatActivity() {
      */
     private fun setBoard() {
         Log.d(TAG, "setBoard: ")
-//        mBoardTiles = CardAdapter(mActivity)
+
+
         mBoard.visibility = View.VISIBLE
     }
 
@@ -127,16 +130,52 @@ class MainActivity : AppCompatActivity() {
         Log.d(TAG, "updateScore: ")
     }
 
+    private fun setScore(score: Int) {
+        Log.d(TAG, "setScore: ")
+    }
+
+    private fun getScore(): Int {
+        Log.d(TAG, "getScore: ")
+        return mCurrentScore.text.toString().toInt()
+    }
+
     private fun updateHighScore() {
         Log.d(TAG, "updateHighScore: ")
+    }
+
+    private fun setHighScore() {
+        Log.d(TAG, "setHighScore: ")
+    }
+
+    private fun getHighScore(): Int {
+        Log.d(TAG, "getHighScore: ")
+        return mHighScore.text.toString().toInt()
     }
 
     private fun updateCardsLeft() {
         Log.d(TAG, "updateCardsLeft: ")
     }
 
+    private fun setCardsLeft() {
+        Log.d(TAG, "setCardsLeft: ")
+    }
+
+    private fun getCardsLeft(): Int {
+        Log.d(TAG, "getCardsLeft: ")
+        return mCardsLeft.text.toString().toInt()
+    }
+
     private fun updateMatchesFound() {
         Log.d(TAG, "updateMatchesFound: ")
+    }
+
+    private fun setMatchesFound() {
+        Log.d(TAG, "setMatchesFound: ")
+    }
+
+    private fun getMatchesFound(): Int {
+        Log.d(TAG, "getMatchesFound: ")
+        return mMatchesFound.text.toString().toInt()
     }
 
     /**
