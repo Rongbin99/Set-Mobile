@@ -1,5 +1,9 @@
 name: Android APK build
 
+env:
+  # The name of the main module repository
+  main_project_module: app
+
 on:
   push:
     branches: [ "master" ]
@@ -23,5 +27,19 @@ jobs:
 
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
+
     - name: Build with Gradle
       run: ./gradlew build
+
+    # Upload Artifact Build
+    # Noted For Output [main_project_module]/build/outputs/apk/debug/
+    - name: Upload APK Debug - ${{ env.repository_name }}
+      uses: actions/upload-artifact@v4
+      with:
+        path: ${{ env.main_project_module }}/build/outputs/apk/debug/
+
+    # Noted For Output [main_project_module]/build/outputs/apk/release/
+    - name: Upload APK Release - ${{ env.repository_name }}
+      uses: actions/upload-artifact@v4
+      with:
+        path: ${{ env.main_project_module }}/build/outputs/apk/release/
