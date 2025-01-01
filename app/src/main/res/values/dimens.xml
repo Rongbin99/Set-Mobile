@@ -29,6 +29,9 @@
     <!-- board_background -->
     <dimen name="board_background_radius">8dp</dimen>
     <dimen name="board_background_stroke_width">4dp</dimen>
+    <!-- board_card -->
+    <dimen name="board_card_radius">12dp</dimen>
+    <dimen name="board_card_stroke_width">3dp</dimen>
     <!-- text_background -->
     <dimen name="text_background_radius">4dp</dimen>
     <dimen name="text_background_stroke_width">2dp</dimen>

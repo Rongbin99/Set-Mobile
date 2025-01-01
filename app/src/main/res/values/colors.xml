@@ -29,6 +29,9 @@
     <!-- board_background -->
     <color name="board_background_color">@color/material_dynamic_primary90</color>
     <color name="board_background_stroke">@color/material_dynamic_secondary90</color>
+    <!-- board_card -->
+    <color name="board_card_color">#fefefe</color>
+    <color name="board_card_stroke">@color/material_dynamic_secondary90</color>
     <!-- text_background -->
     <color name="text_background_color">@color/material_dynamic_primary90</color>
     <color name="text_background_stroke">@color/material_dynamic_secondary90</color>
