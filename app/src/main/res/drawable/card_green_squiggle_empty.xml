@@ -1,0 +1,31 @@
+<!--
+   ##################################################
+   Copyright (c) 2024, 2025 - Rongbin Gu
+   All rights reserved. See LICENSE file for details.
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+   ##################################################
+-->
+
+<vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="100dp"
+    android:viewportWidth="200"
+    android:viewportHeight="100">
+  <path
+      android:pathData="M 87.5 9.5 C 94.732 9.444 101.732 10.611 108.5 13 C 115.976 17.415 118.809 23.915 117 32.5 C 114.314 41.054 112.147 49.721 110.5 58.5 C 110.676 61.882 111.176 65.215 112 68.5 C 115.161 72.658 117.661 77.158 119.5 82 C 118.442 86.052 115.775 88.386 111.5 89 C 101 89.171 92.167 85.337 85 77.5 C 84.333 76.167 83.667 74.833 83 73.5 C 82.333 68.167 82.333 62.833 83 57.5 C 85.516 50.892 87.016 44.059 87.5 37 C 85.102 30.208 82.436 23.541 79.5 17 C 80.731 12.935 83.398 10.435 87.5 9.5 Z"
+      android:strokeColor="#12c165"
+      android:strokeWidth="5"
+      android:strokeLineJoin="round"/>
+</vector>

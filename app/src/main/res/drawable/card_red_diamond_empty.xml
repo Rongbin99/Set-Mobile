@@ -1,0 +1,31 @@
+<!--
+   ##################################################
+   Copyright (c) 2024, 2025 - Rongbin Gu
+   All rights reserved. See LICENSE file for details.
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+   ##################################################
+-->
+
+<vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="100dp"
+    android:viewportWidth="200"
+    android:viewportHeight="100">
+  <path
+      android:pathData="M 98.5 9.5 C 99.376 9.369 100.043 9.702 100.5 10.5 C 106.833 23.167 113.167 35.833 119.5 48.5 C 113.089 61.656 106.422 74.656 99.5 87.5 C 92.578 74.656 85.911 61.656 79.5 48.5 C 86.117 35.601 92.45 22.601 98.5 9.5 Z"
+      android:strokeColor="#f15256"
+      android:strokeWidth="5"
+      android:strokeLineJoin="round"/>
+</vector>
