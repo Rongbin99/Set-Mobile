@@ -1,0 +1,131 @@
+<!--
+   ##################################################
+   Copyright (c) 2024, 2025 - Rongbin Gu
+   All rights reserved. See LICENSE file for details.
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+   ##################################################
+-->
+
+<vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="100dp"
+    android:viewportWidth="1200"
+    android:viewportHeight="600">
+  <path
+      android:pathData="M 535 58 C 565 56 591 62 619 65 C 653 75 689 94 700 127 C 724 210 671 282 665 362 C 662 420 714 448 722 499 C 714 519 697 531 680 537 C 637 549 602 529 569 514 C 537 497 509 473 498 441 C 477 365 526 294 526 220 C 518 175 482 146 477 103 C 483 75 512 65 533 58"
+      android:fillColor="#a13e9e"
+      android:strokeWidth="1"/>
+
+  <path
+      android:pathData="M 510 131 C 567 132 625 131 682 132 C 624 137 566 137 509 136 M 504 119 C 561 120 619 119 675 120 C 617 125 559 125 503 124 M 516 144 C 572 144 628 143 684 144 C 627 148 571 149 515 148"
+      android:fillColor="@color/board_card_color"
+      android:strokeWidth="1"/>
+  <path
+      android:pathData="M 499 108 C 554 108 609 107 664 108 C 608 112 553 113 498 112 M 523 156 C 577 156 632 155 686 156 C 631 160 576 161 522 160"
+      android:fillColor="@color/board_card_color"
+      android:strokeWidth="1"/>
+  <path
+      android:pathData="M 529 168 C 582 168 635 167 687 168 C 633 172 580 173 528 172 M 532 456 C 582 456 633 455 682 456 C 630 460 577 462 527 459"
+      android:fillColor="@color/board_card_color"
+      android:strokeWidth="1"/>
+  <path
+      android:pathData="M 535 180 C 585 180 636 179 686 180 C 635 184 584 185 534 184"
+      android:fillColor="@color/board_card_color"
+      android:strokeWidth="1"/>
+  <path
+      android:pathData="M 523 444 C 573 444 623 443 672 444 C 621 448 571 449 522 448"
+      android:fillColor="@color/board_card_color"
+      android:strokeWidth="1"/>
+  <path
+      android:pathData="M 541 468 C 590 468 640 467 689 468 C 639 472 589 473 540 472 M 519 432 C 568 432 617 431 665 432 C 615 436 562 438 514 435"
+      android:fillColor="@color/board_card_color"
+      android:strokeWidth="1"/>
+  <path
+      android:pathData="M 502 96 C 550 96 599 95 646 96 C 597 100 547 101 499 100"
+      android:fillColor="@color/board_card_color"
+      android:strokeWidth="1"/>
+  <path
+      android:pathData="M 540 192 C 588 192 636 191 684 192 C 635 196 587 197 539 196"
+      android:fillColor="@color/board_card_color"
+      android:strokeWidth="1"/>
+  <path
+      android:pathData="M 516 420 C 564 420 612 419 659 420 C 610 424 561 425 513 424 M 557 480 C 603 480 650 479 696 480 C 648 484 600 485 554 484 M 545 204 C 591 204 638 203 683 204 C 636 208 588 209 542 208"
+      android:fillColor="@color/board_card_color"
+      android:strokeWidth="1"/>
+  <path
+      android:pathData="M 515 408 C 561 408 608 407 653 408 C 606 412 558 413 512 412"
+      android:fillColor="@color/board_card_color"
+      android:strokeWidth="1"/>
+  <path
+      android:pathData="M 515 396 C 560 396 606 395 650 396 C 604 400 557 401 512 400 M 546 216 C 591 216 636 215 680 216 C 634 220 589 221 545 220"
+      android:fillColor="@color/board_card_color"
+      android:strokeWidth="1"/>
+  <path
+      android:pathData="M 515 384 C 559 384 604 383 647 384 C 602 388 557 389 514 388 M 546 228 C 590 228 634 227 677 228 C 632 232 588 233 545 232"
+      android:fillColor="@color/board_card_color"
+      android:strokeWidth="1"/>
+  <path
+      android:pathData="M 516 371 C 559 372 603 371 645 372 C 601 377 557 377 515 376"
+      android:fillColor="@color/board_card_color"
+      android:strokeWidth="1"/>
+  <path
+      android:pathData="M 546 240 C 588 240 631 239 673 240 C 630 244 587 245 545 244"
+      android:fillColor="@color/board_card_color"
+      android:strokeWidth="1"/>
+  <path
+      android:pathData="M 545 252 C 587 252 630 251 671 252 C 628 256 585 257 544 256"
+      android:fillColor="@color/board_card_color"
+      android:strokeWidth="1"/>
+  <path
+      android:pathData="M 576 492 C 618 492 660 491 701 492 C 658 496 614 498 573 496 M 519 360 C 561 360 603 359 644 360 C 601 364 557 365 516 364"
+      android:fillColor="@color/board_card_color"
+      android:strokeWidth="1"/>
+  <path
+      android:pathData="M 543 264 C 584 264 626 263 666 264 C 624 268 581 270 540 268"
+      android:fillColor="@color/board_card_color"
+      android:strokeWidth="1"/>
+  <path
+      android:pathData="M 524 336 C 565 336 607 335 647 336 C 605 340 562 342 521 340"
+      android:fillColor="@color/board_card_color"
+      android:strokeWidth="1"/>
+  <path
+      android:pathData="M 522 348 C 563 348 605 347 645 348 C 603 352 560 353 519 352 M 540 275 C 581 276 623 275 664 276 C 622 281 580 281 539 280"
+      android:fillColor="@color/board_card_color"
+      android:strokeWidth="1"/>
+  <path
+      android:pathData="M 531 312 C 572 312 613 311 653 312 C 611 316 568 318 528 316"
+      android:fillColor="@color/board_card_color"
+      android:strokeWidth="1"/>
+  <path
+      android:pathData="M 538 288 C 578 288 619 287 659 288 C 617 291 573 294 533 291 M 528 324 C 568 324 609 323 649 324 C 607 328 565 329 525 328"
+      android:fillColor="@color/board_card_color"
+      android:strokeWidth="1"/>
+  <path
+      android:pathData="M 534 300 C 574 300 615 299 655 300 C 614 304 573 305 533 304"
+      android:fillColor="@color/board_card_color"
+      android:strokeWidth="1"/>
+  <path
+      android:pathData="M 602 504 C 633 504 664 503 694 504 C 662 507 627 511 598 507"
+      android:fillColor="@color/board_card_color"
+      android:strokeWidth="1"/>
+  <path
+      android:pathData="M 520 83 C 551 84 583 82 613 84 C 581 88 545 90 516 87"
+      android:fillColor="@color/board_card_color"
+      android:strokeWidth="1"/>
+  <path
+      android:pathData="M 637 516 C 648 516 660 514 670 517 C 659 520 637 524 633 517"
+      android:fillColor="@color/board_card_color"
+      android:strokeWidth="1"/>
+</vector>
