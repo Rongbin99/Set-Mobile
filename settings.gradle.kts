@@ -13,5 +13,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Set-apk"
+rootProject.name = "Set-Mobile"
 include(":app")

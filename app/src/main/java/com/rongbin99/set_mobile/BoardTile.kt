@@ -17,7 +17,7 @@ limitations under the License.
 ##################################################
 */
 
-package com.rongbin99.set_apk
+package com.rongbin99.set_mobile
 
 class BoardTile {
 

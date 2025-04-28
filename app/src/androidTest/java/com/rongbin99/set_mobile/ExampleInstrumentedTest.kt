@@ -1,4 +1,4 @@
-package com.rongbin99.set_apk
+package com.rongbin99.set_mobile
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

@@ -1,4 +1,4 @@
-package com.rongbin99.set_apk
+package com.rongbin99.set_mobile
 
 import org.junit.Test
 
