@@ -19,6 +19,6 @@ limitations under the License.
 
 package com.rongbin99.set_mobile
 
-class BoardTile {
-
-}
+data class BoardTile(
+	val imageResIds: List<Int>
+)
